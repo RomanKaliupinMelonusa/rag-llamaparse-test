@@ -10,7 +10,7 @@ from llama_parse import LlamaParse
 
 # Initialize LlamaParse with advanced configuration
 parser = LlamaParse(
-    api_key="llx-...",  # Enterprise Key - replace with your actual API key
+    api_key="llx-...",  # Replace with your actual Enterprise API Key (format: llx-xxxxx...)
     result_type="markdown", 
     premium_mode=True,                 
     adaptive_long_table=True,          

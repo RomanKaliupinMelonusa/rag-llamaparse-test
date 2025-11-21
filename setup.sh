@@ -27,17 +27,13 @@ else
     echo "Virtual environment already exists."
 fi
 
-# Activate virtual environment
-echo "Activating virtual environment..."
-source venv/bin/activate
-
 # Upgrade pip
 echo "Upgrading pip..."
-pip install --upgrade pip --quiet
+venv/bin/pip install --upgrade pip --quiet
 
 # Install dependencies
 echo "Installing dependencies from requirements.txt..."
-pip install -r requirements.txt
+venv/bin/pip install -r requirements.txt
 
 if [ $? -eq 0 ]; then
     echo ""
